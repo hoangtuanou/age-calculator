@@ -44,8 +44,16 @@ h6 {
   isolation: isolate;
 }
 
-input:focus-visible {
-  outline: none;
+input {
+  &:focus-visible {
+    outline: none;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
 
 ul,
